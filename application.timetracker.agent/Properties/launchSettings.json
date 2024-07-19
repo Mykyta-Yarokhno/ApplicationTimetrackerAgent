@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "application.timetracker.agent": {
+      "commandName": "Project",
+      "commandLineArgs": "runAsConsole HelloNikita",
+      "remoteDebugEnabled": false
+    }
+  }
+}

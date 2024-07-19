@@ -1,0 +1,59 @@
+# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
+root = true
+
+[*.cs]
+guidelines = 120
+guidelines_style = 2px dotted 9000FF00
+
+indent_size = 4
+indent_style = space
+
+trim_trailing_whitespace = true
+curly_bracket_next_line = true
+
+###############################
+# .NET Coding Conventions     #
+###############################
+dotnet_style_prefer_auto_properties = false:silent
+
+
+[*.{cs}]
+dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
+dotnet_naming_symbols.public_symbols.applicable_kinds           = property,method,field,event,delegate
+dotnet_naming_symbols.public_symbols.applicable_accessibilities = public
+
+dotnet_naming_rule.public_members_must_be_capitalized.style    = first_word_upper_case_style
+dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_upper
+
+dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
+
+# Expression-level preferences
+dotnet_style_prefer_auto_properties = true:silent
+
+###############################
+# C# Code Style Rules         #
+###############################
+[*.cs]
+# var preferences
+csharp_style_var_for_built_in_types = false:silent
+csharp_style_var_when_type_is_apparent = true:silent
+csharp_style_var_elsewhere = true:silent
+
+# Pattern-matching preferences
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+
+###############################
+# C# Formatting Rules         #
+###############################
+
+csharp_prefer_braces = true
+
+# New line preferences
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_between_query_expression_clauses = true
